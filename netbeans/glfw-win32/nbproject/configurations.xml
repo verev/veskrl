@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>../../thirdparty/glfw/src/context.c</itemPath>
+      <itemPath>../../thirdparty/glfw/src/init.c</itemPath>
+      <itemPath>../../thirdparty/glfw/src/input.c</itemPath>
+      <itemPath>../../thirdparty/glfw/src/monitor.c</itemPath>
+      <itemPath>../../thirdparty/glfw/src/wgl_context.c</itemPath>
+      <itemPath>../../thirdparty/glfw/src/win32_init.c</itemPath>
+      <itemPath>../../thirdparty/glfw/src/win32_monitor.c</itemPath>
+      <itemPath>../../thirdparty/glfw/src/win32_time.c</itemPath>
+      <itemPath>../../thirdparty/glfw/src/win32_tls.c</itemPath>
+      <itemPath>../../thirdparty/glfw/src/win32_window.c</itemPath>
+      <itemPath>../../thirdparty/glfw/src/window.c</itemPath>
+      <itemPath>../../thirdparty/glfw/src/winmm_joystick.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="3">
+      <toolsSet>
+        <compilerSet>CLang|CLang</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <preprocessorList>
+            <Elem>BUILD_SHARED_LIBS</Elem>
+            <Elem>_GLFW_USE_OPENGL</Elem>
+            <Elem>_GLFW_WGL</Elem>
+            <Elem>_GLFW_WIN32</Elem>
+          </preprocessorList>
+          <warningLevel>2</warningLevel>
+        </cTool>
+        <archiverTool>
+        </archiverTool>
+      </compileType>
+      <item path="../../thirdparty/glfw/src/context.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../thirdparty/glfw/src/init.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../../thirdparty/glfw/src/input.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../../thirdparty/glfw/src/monitor.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../thirdparty/glfw/src/wgl_context.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../thirdparty/glfw/src/win32_init.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../thirdparty/glfw/src/win32_monitor.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../thirdparty/glfw/src/win32_time.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../thirdparty/glfw/src/win32_tls.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../thirdparty/glfw/src/win32_window.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../thirdparty/glfw/src/window.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../../thirdparty/glfw/src/winmm_joystick.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="3">
+      <toolsSet>
+        <compilerSet>CLang|CLang</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+          <preprocessorList>
+            <Elem>BUILD_SHARED_LIBS</Elem>
+            <Elem>_GLFW_USE_OPENGL</Elem>
+            <Elem>_GLFW_WGL</Elem>
+            <Elem>_GLFW_WIN32</Elem>
+          </preprocessorList>
+          <warningLevel>2</warningLevel>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <archiverTool>
+        </archiverTool>
+      </compileType>
+      <item path="../../thirdparty/glfw/src/context.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../thirdparty/glfw/src/init.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../../thirdparty/glfw/src/input.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../../thirdparty/glfw/src/monitor.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../thirdparty/glfw/src/wgl_context.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../thirdparty/glfw/src/win32_init.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../thirdparty/glfw/src/win32_monitor.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../thirdparty/glfw/src/win32_time.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../thirdparty/glfw/src/win32_tls.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../thirdparty/glfw/src/win32_window.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../thirdparty/glfw/src/window.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../../thirdparty/glfw/src/winmm_joystick.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="95">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>../../src/constants.h</itemPath>
+      <itemPath>../../src/modcurse.h</itemPath>
+      <itemPath>../../src/modules.h</itemPath>
+      <itemPath>../../src/modveskrl.h</itemPath>
+      <itemPath>../../src/vutil.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="tinycthread" displayName="tinycthread" projectFiles="true">
+        <itemPath>../../thirdparty/tinycthread/tinycthread.c</itemPath>
+        <itemPath>../../thirdparty/tinycthread/tinycthread.h</itemPath>
+      </logicalFolder>
+      <itemPath>../../src/main.c</itemPath>
+      <itemPath>../../src/modcurse.c</itemPath>
+      <itemPath>../../src/modveskrl.c</itemPath>
+      <itemPath>../../src/vutil.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../../thirdparty/getopt</Elem>
+    <Elem>../../thirdparty/tinycthread</Elem>
+    <Elem>../../src</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>CLang|CLang</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <standard>3</standard>
+          <incDir>
+            <pElem>../../thirdparty/tinycthread</pElem>
+            <pElem>../../thirdparty/glfw/include</pElem>
+          </incDir>
+        </cTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>../glfw-win32/dist/Debug/CLang-Windows</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../glfw-win32"
+                            CT="3"
+                            CN="Debug"
+                            AC="true"
+                            BL="true"
+                            WD="../glfw-win32"
+                            BC="${MAKE}  -f Makefile CONF=Debug"
+                            CC="${MAKE}  -f Makefile CONF=Debug clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libglfw-win32.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../glfw-win32"
+                            CT="3"
+                            CN="Release"
+                            AC="false"
+                            BL="true"
+                            WD="../glfw-win32"
+                            BC="${MAKE}  -f Makefile CONF=Release"
+                            CC="${MAKE}  -f Makefile CONF=Release clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libglfw-win32.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerOptionItem>-lopengl32 -lgdi32 </linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../../src/constants.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../../src/modcurse.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../../src/modcurse.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/modules.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/modveskrl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../../src/modveskrl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/vutil.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../../src/vutil.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../thirdparty/tinycthread/tinycthread.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../thirdparty/tinycthread/tinycthread.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>CLang|CLang</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+          <standard>3</standard>
+          <incDir>
+            <pElem>../../thirdparty/tinycthread</pElem>
+            <pElem>../../thirdparty/glfw/include</pElem>
+            <pElem>../../src</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>../glfw-win32/dist/Release/CLang-Windows</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerOptionItem>-lopengl32 -lgdi32 </linkerOptionItem>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../glfw-win32"
+                            CT="3"
+                            CN="Debug"
+                            AC="true"
+                            BL="true"
+                            WD="../glfw-win32"
+                            BC="${MAKE}  -f Makefile CONF=Debug"
+                            CC="${MAKE}  -f Makefile CONF=Debug clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libglfw-win32.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+            <linkerLibProjectItem>
+              <makeArtifact PL="../glfw-win32"
+                            CT="3"
+                            CN="Release"
+                            AC="false"
+                            BL="true"
+                            WD="../glfw-win32"
+                            BC="${MAKE}  -f Makefile CONF=Release"
+                            CC="${MAKE}  -f Makefile CONF=Release clean"
+                            OP="${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libglfw-win32.a">
+              </makeArtifact>
+            </linkerLibProjectItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+      <item path="../../src/constants.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../../src/modcurse.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../../src/modcurse.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/modules.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/modveskrl.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../../src/modveskrl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../src/vutil.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="../../src/vutil.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../../thirdparty/tinycthread/tinycthread.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="../../thirdparty/tinycthread/tinycthread.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
